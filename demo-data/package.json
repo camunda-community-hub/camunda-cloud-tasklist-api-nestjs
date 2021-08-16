@@ -1,0 +1,14 @@
+{
+  "name": "demo-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "zeebe-node": "^1.3.4"
+  },
+  "scripts": {
+    "start": "node ./demoData.js"
+  }
+}
