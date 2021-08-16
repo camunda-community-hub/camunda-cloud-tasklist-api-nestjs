@@ -1,0 +1,16 @@
+{
+  "name": "tasklist-example",
+  "private": true,
+  "workspaces": [
+    "api",
+    "frontend",
+    "demo-data"
+  ],
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "scripts": {
+    "start:demo-data": "concurrently \"yarn workspace api run start:dev\" \"yarn workspace frontend run dev\" \"yarn workspace demo-data run start\"",
+    "start": "concurrently \"yarn workspace api run start:dev\" \"yarn workspace frontend run dev\""
+  }
+}
